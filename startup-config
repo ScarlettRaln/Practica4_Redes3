@@ -1,0 +1,48 @@
+hostname p1234
+!
+service telnet
+service http encrypted password PQYPOYKH$c9c2ac7130a0a5321a948da77262d229
+service ftp
+!
+administrator rcp encrypted password PVOXBPUK$F0PVQi4WYB1fNhlm1HLz2.
+!
+!
+!
+!
+interface loopback lo
+  ip address 127.0.0.1/8
+  ip mtu 16436
+!
+interface ethernet eth0
+  ip address 192.168.0.1/24
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth1
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth2
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth3
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth4
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth5
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth6
+  ip mtu 1500
+  shutdown
+!
+interface ethernet eth7
+  ip mtu 1500
+  shutdown
+!
